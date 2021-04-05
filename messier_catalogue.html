@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messier Catalogue</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="messier_catalogue.json"></script>
+    <script src="messier_catalogue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <form>
         <label for="messier_instruction">Messier object to fetch - insert number (1 - 110): </label>
         <input type="text" id="messier_input" name="messier_input"><br>
-        <input type="submit" id="enter_button" value="Enter"><br>
-        <label for="error_message"></label>
+        <button type="button" id="enter_button" onclick="enter_button_function()">Enter</button><br>
+        <label for="error_message" id="error_message"></label>
     </form>
 </body>
 
