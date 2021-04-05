@@ -19,6 +19,7 @@ function enter_button_function() {
             type = data[input-1]["Detailed Type"];
             magnitude = data[input-1].Magnitude;
             size = data[input-1]["Size (arcminutes)"];
+            // set variable values
 
             var table = document.getElementById("messier_table");
             table.style.visibility = "visible"
@@ -28,12 +29,14 @@ function enter_button_function() {
             var cell_type = row.insertCell(2);
             var cell_magnitude = row.insertCell(3);
             var cell_size = row.insertCell(4);
+            // set table style, row and cells
 
             cell_number.innerHTML = number;
             cell_name.innerHTML = name;
             cell_type.innerHTML = type;
             cell_magnitude.innerHTML = magnitude;
             cell_size.innerHTML = size;
+            // set table cell html to variable values
         });
     } //input is valid
 
