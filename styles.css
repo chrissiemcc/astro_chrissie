@@ -5,3 +5,12 @@ body
     font-family: Tahoma, Verdana, Arial, sans-serif;
     color: red;
 }
+table
+{
+    visibility: hidden;
+}
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
